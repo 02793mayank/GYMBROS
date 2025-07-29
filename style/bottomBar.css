@@ -1,0 +1,26 @@
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  z-index: 999;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-item.active {
+  color: #3399ff;
+  text-shadow: 0 0 8px #3399ff, 0 0 16px #3399ff;
+}
